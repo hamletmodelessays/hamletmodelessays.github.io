@@ -1,0 +1,336 @@
+
+/* === HERO BLOCK 6 === */
+
+.hero-block {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.hero-block h1, .hero-block h2 {
+	text-align: center;
+	color: #fff;
+	text-shadow: 2px 2px #222;
+}
+
+.hero-block h1 {
+	font-family: 'Playfair Display', serif;
+	font-weight: normal;
+	font-size: calc(44px + (84 - 44) * ((100vw - 320px)/(1600 - 320)));
+}
+
+.hero-block h2 {
+	font-family: 'Roboto', sans-serif;
+	font-size: calc(22px + (42 - 22) * ((100vw - 320px)/(1600 - 320)));
+	line-height: 1.5;
+	text-transform:uppercase;
+	letter-spacing: 1px
+}
+
+.hero-block h2.smaller {
+	font-size: calc(19px + (36 - 19) * ((100vw - 320px)/(1600 - 320)));
+}
+
+
+.hero-block hr { background-color: #9d261d; border: none; text-align: center }
+
+/* Desktop  */
+@media all and (min-width:768px) { 
+	.hero-block hr { width: 12%; height: 12px; margin: 0 auto 3% auto }
+}
+
+/* Mobiles  */
+@media all and (max-width: 767px) { 
+	.hero-block hr { width: 28%; height: 12px; margin: 0 auto 8% auto }
+}
+
+/* Desktop - block height, text width and h1 bottom margin */
+@media all and (min-width:768px) { 
+	.hero-block { height: 480px }
+	.hero-block h1, .hero-block h2 { 
+		width: 60%; 
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.hero-block h1 { margin-bottom: 3% }
+}
+
+/* Mobiles - block height, text width and h1 bottom margin */
+@media all and (max-width:767px) { 
+	.hero-block { height: 340px }
+	.hero-block h1, .hero-block h2  { 
+		width: 80%; 
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.hero-block h1 { margin-top:-1%; margin-bottom: 8% }
+}
+
+.container-introduction { width: 100%; max-width: 1600px; text-align: center; background-color: #f5f1ed }
+
+.container-introduction p.introduction-quote {
+	font-family: Georgia, 'Times New Roman', serif; color: #555;
+	font-size: calc(20px + (32 - 20) * ((100vw - 320px) / (1440 - 320)));
+}
+
+.container-introduction p.introduction-quote span {
+	color: #b90303; font-weight:bold;
+}
+
+.container-introduction p.introduction-source {
+	font-family: 'Roboto', sans-serif; color: #000;
+	font-size: calc(16px + (22 - 16) * ((100vw - 320px) / (1440 - 320)));
+}
+
+/* Desktop */
+@media all and (min-width:768px) { 
+	.container-introduction { padding: 3% 20% 4% 20%; margin-bottom: 3% }
+	.container-introduction p.introduction-quote { line-height: 1.5; margin-bottom: 3% }
+	.container-divider { margin: 5% auto 5% auto; height: 400px }
+}
+
+/* Mobiles */
+@media all and (max-width:767px) { 
+	.container-introduction { padding: 8% 8% 8% 8%; margin-bottom: 8% }
+	.container-introduction p.introduction-quote { line-height: 1.4; margin-bottom: 4% }
+	.container-divider { margin: 9% auto 9% auto; height: 120px }
+}
+
+.container-narrow { margin: 0 auto 0 auto;  max-width: 1070px; text-align: center }
+
+/* Desktop */
+@media all and (min-width:768px) { 
+	.container-narrow { width: 80%; }
+}
+
+/* Mobiles */
+@media all and (max-width:767px) { 
+	.container-narrow { width: 90%; margin-bottom: 12% }
+}
+
+.container-narrow h2.category-name {
+	font-family: 'Playfair Display', 'Times New World', Times, serif; font-weight: 400;
+	font-size: calc(32px + (54 - 32) * ((100vw - 320px) / (1440 - 320)));
+	text-align: center;
+	color:#222;
+	color: #b90303;
+}
+
+.container-narrow p.category-description {
+	font-family: 'Roboto', Arial, sans-serif; font-weight: 400;
+	font-size: calc(14px + (24 - 14) * ((100vw - 320px) / (1440 - 320)));
+	text-align: center;
+	color:#777; 
+}
+
+.container-narrow p.category-prices {
+	font-family: 'Roboto', Arial, sans-serif; font-weight: 400; 
+	font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1440 - 320)));
+	text-align: center;
+	color:#000; display:block;
+}
+
+.container-narrow p.special-offer {
+	font-family: 'Roboto', Arial, sans-serif; font-weight: 400;
+	font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1440 - 320)));
+	display: block;
+	text-align: center;
+	border-radius: 5%;
+	color:#000; display: block;
+	background-color: #fff2ac;
+	background-image: linear-gradient(to right,#ffe359 0,#fff2ac 100%);
+}
+
+.container-narrow a.full-range { 
+	display: inline-block; text-decoration: none; 
+	border-width: 1px; border-style: solid; margin-left: auto; margin-right: auto; 
+	text-align: center; text-transform: uppercase; letter-spacing:1px;
+	font-size: calc(14px + (15 - 14) * ((100vw - 320px) / (1440 - 320)));
+}
+
+.container-narrow a.full-range:link, 
+.container-narrow a.full-range:visited { color: #222; border-color: #222 }
+
+.container-narrow a.full-range:hover, 
+.container-narrow a.full-range:active { color: #b90303; border-color: #b90303 }
+
+/* Desktop */
+@media all and (min-width:768px) { 
+	.container-narrow a.full-range { margin-top:- 5%; margin-bottom: 8%;  padding: 10px 28px }
+}
+
+/* Mobiles */
+@media all and (max-width:767px) { 
+	.container-narrow a.full-range { margin-top:- 5%; margin-bottom: 8%;  padding: 8px 20px }
+}
+
+
+/* Desktop */
+@media all and (min-width:768px) { 
+	h2.category-name { margin: 0 auto 2% auto }
+	p.category-description { width: 70%; margin: 0 auto 2% auto; line-height: 1.4 }
+	p.category-prices { width: 70%; margin: 0 auto 3% auto; line-height: 1.4 }
+	p.special-offer { width: 30%; padding: 12px 10px; margin: 0 auto 5% auto }
+}
+
+/* Mobiles */
+@media all and (max-width:767px) { 
+	h2.category-name { margin: 0 auto 4% auto }
+	p.category-description { width: 84%; margin: 0 auto 4% auto; line-height: 1.4 }
+	p.category-prices { width: 84%; margin: 0 auto 5% auto; line-height: 1.4 }
+	p.special-offer { width: 70%; padding: 10px 8px; margin: 0 auto 12% auto; font-weight:bold }
+}
+
+/* ======== ANIMATION ON PAGE LOAD ===== */
+
+.slide-in-top {
+  -webkit-animation: slide-in-top 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+          animation: slide-in-top 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2019-3-20 10:33:40
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/*
+ * ----------------------------------------
+ * animation slide-in-top
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* ==== FOUR COLUMN GRID ======= */
+
+.flex-grid-four-two { display: flex; flex-direction: row }
+
+/* Desktop */
+@media all and (min-width:768px) { 
+	.flex-grid-four-two { text-align: center; margin-bottom: 48px }
+}
+
+/* Mobiles */
+@media all and (max-width:767px) { 
+	.flex-grid-four-two { flex-wrap: wrap; text-align: center }
+}
+
+/* ==== EQUAL COLUMN WIDTHS IN FOUR COLUMN GRID ======= */
+
+.flex-grid-four-two .col-gutter { display: block; text-decoration: none } 
+
+.flex-grid-four-two .col-gutter:link,
+.flex-grid-four-two .col-gutter:visited {
+	opacity: 1;
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+
+.flex-grid-four-two .col-gutter:hover,
+.flex-grid-four-two .col-gutter:active { 
+	opacity: 0.7;
+}
+
+
+/* Desktop */
+@media all and (min-width:768px) { 
+	.flex-grid-four-two .col-gutter{ 
+		display: block; width: 23%; 
+		text-decoration: none;
+	}
+	.flex-grid-four-two .col-gutter:nth-child(1) { margin-right: 3% }
+	.flex-grid-four-two .col-gutter:nth-child(2) { margin-right: 3% }
+	.flex-grid-four-two .col-gutter:nth-child(3) { margin-right: 3% }
+	.flex-grid-four-two .col-gutter:nth-child(4) { margin-right: 0 }
+	.flex-grid-four-two .col-vertical-center { align-self: center }
+}
+
+/* Mobiles */
+@media all and (max-width:767px) { 
+	.flex-grid-four-two .col-gutter { width: 46%; margin-bottom: 8% }
+	.flex-grid-four-two .col-gutter:nth-child(odd) { margin-right: 7% }
+	.flex-grid-four-two .col-gutter:nth-child(even) { margin-right: 0 }
+}
+
+
+/*  ===== CONTENT WITHIN COLUMNS OF FLEXBOX GRIDS ====*/
+
+.flex-grid-four-two h3 {
+	font-weight: 700; color: #183b56; 
+	font-size: calc(15px + (24 - 15) * ((100vw - 320px) / (1440 - 320)));
+	text-align: center;
+	font-family: 'Playfair Display', 'Times New World', Times, serif; font-weight: 400;
+}
+
+.flex-grid-four-two h3.smaller {
+	font-size: calc(13px + (22 - 13) * ((100vw - 320px) / (1440 - 320)));
+	line-height: 1.5;
+}
+
+.flex-grid-four-two p { 
+	font-weight: 400; color: #465E72;
+	font-size: calc(13px + (17 - 13) * ((100vw - 320px) / (1440 - 320)));
+	text-align: center;
+	letter-spacing: 1px;
+	font-family: 'Roboto', Arial, sans-seif;
+}
+
+
+.flex-grid-four-two p.price { 
+	font-weight: 700; color: #465E72;
+	font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1440 - 320)));
+	text-align: center;
+	color: #7b7d7d;
+	font-family: sans-serif;
+	font-weight: 400;
+}
+
+
+/* Desktop */
+@media all and (min-width:768px) { 
+	.flex-grid-four-two h3 { margin-bottom: 8% }
+	.flex-grid-four-two h3.smaller { margin-bottom: 9% }
+
+	.flex-grid-four-two p { line-height: 1.4; margin-bottom: 8% }
+	.flex-grid-four-two h3, .flex-grid-four-two p { width: 92%; margin-left: auto; margin-right: auto; }
+	.flex-grid-four-two .img-fluid { margin-bottom: 5% }
+}
+
+/* Mobiles */
+@media all and (max-width:767px) { 
+	.flex-grid-four-two h3 { margin-bottom: 8% }
+	.flex-grid-four-two p { line-height: 1.3; margin-bottom: 12% }
+	.flex-grid-four-two .img-fluid { margin-bottom: 8% }
+}
+
+
+
+
+
+
+

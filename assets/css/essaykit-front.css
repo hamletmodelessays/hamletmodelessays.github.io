@@ -1,0 +1,1204 @@
+
+@import url("//fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic");
+@import url("//fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700italic,900,900italic");
+@import url("//fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic");>
+
+body { font-family: "Open Sans",Calibri,Candara,'Helvetica Neue', Helvetica, Arial,sans-serif }
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, p { font-family: "Open Sans",Calibri,Candara,Arial,sans-serif; font-weight: 300 }
+
+hr { margin-bottom: 0 }
+.thumbnail { border-color:#fff }
+p.deckhead a { font-weight:bold } 
+
+
+html, body { height:100% }
+
+body .navbar,
+body .navbar-inverse,
+body .navbar-fixed-top  { background: transparent; background-color: transparent;border-color: transparent }
+
+.navbar-nav > li > a { padding-bottom: 5px; padding-top: 5px }
+
+.navbar-inverse .navbar-nav > li > a { color:#fff; font-weight:bold }
+.navbar-inverse .navbar-nav > li > a:focus,
+.navbar-inverse .navbar-nav > li > a:hover { background:#950202;color:#fff }
+
+.navbar-inverse .navbar-nav > .active > a, 
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover { background: #0084a9; color: #fff}
+
+.navbar-inverse .navbar-nav > li.social-icons > a { display: inline-block;float: left;color:#fff;margin-right:0;margin-left:0;padding: 5px 8px 5px 8px }
+.navbar-inverse .navbar-nav > li.social-icons > a:focus,
+.navbar-inverse .navbar-nav > li.social-icons > a:hover { background:transparent;color:#3498db }
+
+.navbar-inverse .navbar-nav > li > a.btn-primary { font-weight:bold;font-size:15px; 
+	padding-left:10px;padding-right:10px;background:transparent; border: solid 2px #fff; border-radius:0; margin-left:22px }
+
+.navbar-inverse .navbar-nav > li > a.btn-primary:focus,
+.navbar-inverse .navbar-nav > li > a.btn-primary:hover { background: #f4d072; border: solid 2px #f4d072; border-radius:0 }
+
+.navbar-inverse .navbar-brand img { min-width:172px }
+
+.navbar-inverse .navbar-toggle { margin-top:16px; border-radius: 0;background:#9d261d;border-color:#9d261d }
+.navbar-inverse .navbar-toggle .icon-bar { background-color:#fff !important }
+
+.navbar-inverse .navbar-toggle:hover, 
+.navbar-inverse .navbar-toggle:focus { background: #9d261d; border-color:#9d261d }
+
+.navbar-inverse .navbar-toggle:hover .icon-bar,
+.navbar-inverse .navbar-toggle:focus .icon-bar { background: #fff !important;color:#fff !important }
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form { border-color: transparent }
+
+@media all and (max-width: 320px) {
+	body .navbar,
+	body .navbar-inverse,
+	body .navbar-fixed-top  {  background-color:rgba(132,2,2,0.8);border-color: transparent }
+	.navbar-inverse a.navbar-brand { margin-top:-4px } 
+	ul.navbar-nav { margin-top: 20px;padding-top:5px }
+	.navbar-inverse .navbar-nav > li > a { font-size:16px; font-weight:bold; margin-left: 20px;margin-bottom:12px }
+	.navbar-inverse .navbar-nav > li.social-icons > a { margin-left:26px}
+	.navbar-inverse .navbar-nav > li > a.btn-primary { margin-left:0; clear:both; width:50%; margin-left: 28px}
+	.navbar-inverse .navbar-collapse { background:rgba(132,2,2,0.8); max-height: 400px; height:300px }
+
+	body .navbar, body .navbar-inverse, body .navbar-fixed-top {
+		background-color: rgba(132, 2, 2, 0.8); border-color: transparent;
+	}
+
+}
+
+@media all and (max-width: 767px) {
+	body .navbar,
+	body .navbar-inverse,
+	body .navbar-fixed-top  {  background-color:rgba(132,2,2,0.8);border-color: rgba(132,2,2,0.8) }
+	.navbar-inverse a.navbar-brand { margin-top:-4px } 
+	ul.navbar-nav { margin-top: 20px;padding-top:5px }
+	.navbar-inverse .navbar-nav > li > a { font-size:16px; font-weight:bold; margin-left: 20px;margin-bottom:12px }
+	.navbar-inverse .navbar-nav > li.social-icons > a { margin-left:26px}
+	.navbar-inverse .navbar-nav > li > a.btn-primary { margin-left:0; clear:both; width:50%; margin-left: 28px}
+	.navbar-inverse .navbar-collapse { background:rgba(132,2,2,0.8); max-height: 400px; height:300px }
+}
+
+
+@media all and (min-width: 768px) {
+	body .navbar,
+	body .navbar-inverse,
+	body .navbar-fixed-top  {  background-color:transparent;border-color:transparent }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+	ul.navbar-nav { margin-top: 12px }
+	.navbar-inverse .navbar-nav > li > a { font-size:14px; font-weight:normal;
+		margin-right:12px;margin-left: -16px;margin-bottom:12px;margin-top:9px }
+	.navbar-inverse .navbar-nav > li > a.btn-primary { display:none }
+}
+
+@media all and (min-width : 992px) and (max-width: 1023px) {
+	ul.navbar-nav { margin-top: 12px }
+	.navbar-inverse .navbar-nav > li > a { font-size:15px; font-weight:normal;
+		margin-right:12px;margin-left: -16px;margin-bottom:12px;margin-top:9px }
+	.navbar-inverse .navbar-nav > li > a.btn-primary { margin-left:20px; clear:both }
+}
+
+@media all and (min-width : 1024px) and (max-width: 1199px) {
+	ul.navbar-nav { margin-top: 12px }
+	.navbar-inverse .navbar-nav > li > a { font-size:15px; font-weight:normal;
+		margin-right:12px;margin-left: -16px;margin-bottom:12px;margin-top:9px }
+	.navbar-inverse .navbar-nav > li > a.btn-primary { margin-left:20px; clear:both }
+}
+
+@media all and (min-width : 1200px) and (max-width: 1336px) {
+	ul.navbar-nav { margin-top: 12px }
+	.navbar-inverse .navbar-nav > li > a { font-size:16px; font-weight:bold;
+		margin-right:12px;margin-left: -16px;margin-bottom:12px;margin-top:9px }
+	.navbar-inverse .navbar-nav > li > a.btn-primary { margin-left:30px }
+}
+
+@media all and (max-width: 1440px) and (min-width: 1337px) {
+	ul.navbar-nav { margin-top: 12px }
+	.navbar-inverse .navbar-nav > li > a { font-size:16px; font-weight:bold;
+		margin-right:12px;margin-left: -16px;margin-bottom:12px;margin-top:9px }
+	.navbar-inverse .navbar-nav > li > a.btn-primary { margin-left:30px }
+}
+
+@@media all and (min-width: 1441px) {
+	ul.navbar-nav { margin-top: 12px }
+	.navbar-inverse .navbar-nav > li > a { font-size:16px; font-weight:bold;
+		margin-right:12px;margin-left: -16px;margin-bottom:12px;margin-top:9px }
+	.navbar-inverse .navbar-nav > li > a.btn-primary { margin-left:30px }
+}
+
+
+.bannertext { width: 100%; max-width: 900px; margin: 0 auto; text-align: center }
+
+.bannertext .container-ss h1 { color:#fff; text-transform:uppercase;margin:0 auto; font-family: 'Lato', Arial, sans-serif; margin: 0; padding:0; 
+	font-weight: 700; line-height: 140%; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); }
+
+.bannertext hr { border: 1px solid white; width: 150px }
+
+.bannertext .container-ss h2 { color:#fff; font-family:'Lato', Arial, sans-serif; margin: 0; padding:0; 
+ font-weight: 700; line-height: 140%; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); }
+
+.bannertext .container-ss h2 span { color:rgb(255,4,4) }
+
+p.on-media { color:#fff; font-family:'Lato', Arial, sans-serif }
+
+@media all and (max-width: 320px) {
+	.bannertext .container-ss { padding-top: 24% }
+	.bannertext .container-ss h1 { letter-spacing:0; font-size: 20px; margin:10px 0 }
+	.bannertext .container-ss h2 { margin-top:32px; font-size:24px; line-height:164% }
+	.bannertext .container-ss p.on-media { margin-top:18px; font-size: 14px;font-weight:400; margin-top:18px; margin-bottom:24px }
+}
+
+@media all and (min-width: 321px) and (max-width: 360px) {
+	.bannertext .container-ss { padding-top: 24% }
+	.bannertext .container-ss h1 { font-size: 20px; margin:10px 0 }
+	.bannertext .container-ss h2 { margin-top:32px; font-size:24px; line-height:164% }
+	.bannertext .container-ss p.on-media { margin-top:18px; font-size: 14px;font-weight:400; margin-top:18px; margin-bottom:24px }
+}
+
+@media all and (min-width: 361px) and (max-width: 480px) {
+	.bannertext .container-ss { padding-top: 16% }
+	.bannertext .container-ss h1 {  font-size: 22px; margin:10px 0 }
+	.bannertext .container-ss h2 { margin-top:32px; font-size:32px; line-height:164% }
+	.bannertext .container-ss p.on-media { margin-top:18px; font-size: 14px;font-weight:400; margin-top:18px; margin-bottom:24px }
+}
+
+@media all and (min-width: 481px) and (max-width: 767px) { 
+	.bannertext .container-ss { padding-top: 12% }
+	.bannertext .container-ss h1 { font-size: 24px; margin:10px 0 }
+	.bannertext .container-ss h2 { margin-top:32px; font-size:42px; line-height:164% }
+	.bannertext .container-ss p.on-media { margin-top:18px; font-size: 16px;font-weight:400; margin-top:18px; margin-bottom:24px }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+	.bannertext .container-ss { padding-top: 10% }
+	.bannertext .container-ss h1 { font-size: 24px; margin:10px 0 }
+	.bannertext .container-ss h2 { margin-top:22px; font-size:42px; line-height:164% }
+	.bannertext .container-ss p.on-media { margin-top:18px; font-size: 14px;font-weight:400; margin-top:18px; margin-bottom:24px }
+	.bannertext .container-ss p.on-media span { padding-left:8px; padding-right:8px }
+
+}
+
+@media all and (min-width : 992px) and (max-width: 1023px) {
+	.bannertext .container-ss { padding-top: 10% }
+	.bannertext .container-ss h1 { font-size: 24px; margin:10px 0 }
+	.bannertext .container-ss h2 { margin-top:22px; font-size:42px; line-height:164% }
+	.bannertext .container-ss p.on-media { margin-top:18px; font-size: 18px;font-weight:400; margin-top:18px; margin-bottom:24px }
+	.bannertext .container-ss p.on-media span { padding-left:8px; padding-right:8px }
+}
+
+@media all and (min-width : 1024px) and (max-width: 1199px) {
+	.bannertext .container-ss { padding-top: 10% }
+	.bannertext .container-ss h1 { font-size: 28px; margin:10px 0 }
+	.bannertext .container-ss h2 { margin-top:22px; font-size:42px; line-height:164% }
+	.bannertext .container-ss p.on-media { margin-top:18px; font-size: 18px;font-weight:400; margin-top:18px; margin-bottom:24px }
+	.bannertext .container-ss p.on-media span { padding-left:8px; padding-right:8px }
+}
+
+@media all and (min-width : 1200px) and (max-width: 1336px) {
+	.bannertext .container-ss { padding-top: 10% }
+	.bannertext .container-ss h1 { font-size: 28px; margin:10px 0 }
+	.bannertext .container-ss h2 { margin-top:22px; font-size:64px; line-height:164% }
+	.bannertext .container-ss p.on-media { margin-top:18px; font-size: 18px;font-weight:400; margin-top:18px; margin-bottom:24px }
+	.bannertext .container-ss p.on-media span { padding-left:8px; padding-right:8px }
+}
+
+@media all and (min-width: 1337px) and (max-width: 1440px) {
+	.bannertext .container-ss { padding-top: 10% }
+	.bannertext .container-ss h1 { font-size: 28px; margin:10px 0 }
+	.bannertext .container-ss h2 { margin-top:32px; font-size:64px; line-height:164% }
+	.bannertext .container-ss p.on-media { margin-top:18px; font-size: 18px;font-weight:400; margin-top:18px; margin-bottom:24px }
+	.bannertext .container-ss p.on-media span { padding-left:8px; padding-right:8px }
+}
+
+@media all and (min-width: 1441px) {
+	.bannertext .container-ss { padding-top: 10% }
+	.bannertext .container-ss h1 { font-size: 28px; margin:10px 0 }
+	.bannertext .container-ss h2 { margin-top:32px; font-size:64px; line-height:164% }
+	.bannertext .container-ss p.on-media { margin-top:18px; font-size: 18px;font-weight:400; margin-top:18px; margin-bottom:24px }
+	.bannertext .container-ss p.on-media span { padding-left:8px; padding-right:8px }
+}
+
+
+
+
+.jumbotron { 
+	padding:0;
+	background: #950202;
+	text-align:left;margin-bottom:0;
+}
+
+.jumbotron .box-side { text-align:right; vertical-align:bottom }
+.jumbotron .box-side h4 { color:#fff; font-weight:bold; border: solid 2px #fff; display: inline-block;  }
+.jumbotron .box-side p { color:#fff }
+.jumbotron .box-side img { text-align: right !important; margin-right:0; padding-right:0 }
+
+.jumbotron h1 { font-weight:bold; color: #fff; letter-spacing:-1px;line-height: 112%; text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3); }
+
+.jumbotron h2 { color:#fff; display:inline-block; border-top: solid 2px #fff; font-weight:bold; text-transform:uppercase;
+	 margin-top: 0; margin-left:3px; color:#fff; font-weight:bold;line-height: 112%;}
+
+.jumbotron .slider-info-container h2 a { color: #fff; text-decoration: underline }
+.jumbotron .slider-info-container h2 a:hover, .jumbotron .slider-info-container h2 a:active { text-decoration: none}
+
+.jumbotron h3 { border-top: solid 1px #fff }
+.jumbotron h3 a { color:#fff;font-weight:bold; text-decoration: underline }
+
+.jumbotron  ul.fa-ul li { color: #fff }
+.jumbotron  ul.fa-ul li span { border-bottom: solid 3px #2ECC71 }
+
+.jumbotron  ul.fa-ul li i { color: #2ECC71 }
+
+
+.jumbotron a.ghost-button:link, 
+.jumbotron a.ghost-button:visited {
+	display: inline-block; background: transparent; color: #fff;
+	border: solid 2px #fff; border-radius: 2px;font-weight:bold;
+}
+
+.jumbotron a.ghost-button:hover, 
+.jumbotron a.ghost-button:active { text-decoration: none; background: #CF000F }
+
+
+
+/* ===== CONTENT BLOCKS ================ */
+
+.no-top-margin { margin-top: 0 }
+.center-block {
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-bottom:12px;
+	text-align: center !important;
+}
+
+p.center-block {
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-bottom:12px;
+	text-align: center;
+}
+
+
+.block-vertical { width:100%  }
+.block-vertical .row .col-md-12 { text-align:center }
+.block-vertical .row .col-md-12 h2 { letter-spacing: -1px }
+.block-vertical .row .row .col-md-12 h3, .block-vertical .row .row .col-md-12 p { text-align: left }
+.block-vertical .col-md-12 h4 { margin: 0 auto 0 auto; padding:0; color: #005581; font-weight: bold;line-height:138% }
+
+.block-vertical p { line-height: 126% }
+.block-vertical ul, .block-vertical ul.icons-ul { margin: -6px 0 0 0; padding-left:26px }
+.block-vertical li { line-height: 120% }
+.block-vertical ul.icons-ul { margin: -6px 0 0 0; padding-left:26px}
+.block-vertical ul.icons-ul li i { color: #68217a }
+.block-vertical .img-responsive { margin: 20px auto; text-align:center }
+
+.block-vertical .well-asphalt { background: #34495e;  padding: 12px; border-color: #34495e }
+.block-vertical .well-asphalt h3, .block-vertical .well-asphalt p, .block-vertical .well-asphalt li { color: #fff; margin-top:0 }
+.block-vertical .well-asphalt ul.icons-ul li i { color: #adff2f }
+.block-vertical .well-asphalt ul.icons-ul h3, .block-vertical .well-asphalt ul.icons-ul p, 
+.block-vertical .well-asphalt ul.icons-ul li { text-align: left }
+
+.block-white .well { border-width:0; border-radius: 0; border-color:  #d9ede0; background: #d9ede0; color:#000 } 
+.block-white .well .fa-check { color:green }
+
+
+.block-white { background: #fff }
+.block-white a:link, .block-light-grey a:link, .block-white a:visited, .block-light-grey a:visited { color:#b90303; text-decoration: underline}
+.block-white a:hover, .block-light-grey a:hover,  .block-white a:active, .block-light-grey  a:hover{ text-decoration: none }
+
+
+.block-light-grey { background: #ecf0f1; background: #f5f1ed;}
+.block-white .col-md-12 h2, 
+.block-light-grey .col-md-12 h2 { color: #b90303 }
+.block-red { background: #b4975a; margin-top:-40px }
+
+.block-vertical .col-md-2 p.big-no { background: #9d261d; border-radius: 100%; 
+	color: #fff; display: inline-block; margin-left:16px; margin-bottom:30px  }
+.block-vertical .well { background: #d9ede0; border-radius:0;border: solid 1px #A9D6B9 }
+.block-vertical .well h4 { text-transform: uppercase; font-weight: bold; color: #000; margin: 0 0 12px 0 }
+.block-vertical .well h4.quotes { text-transform: uppercase; font-weight: bold; color: #000; margin: 20px 0 3px 0 }
+.block-vertical .well ul.fa-ul { margin-left: 0 }
+.block-vertical .well ul.fa-ul li { color: #000;list-style-type: none; line-height: 118%; margin-bottom:12px }
+.block-vertical .well ul.fa-ul li i { color: #2ecc71 }
+.block-vertical .well p { color:#000;font-weight:600 }
+
+.block-vertical .well .quote-no { color: #000; float:left; border: solid 2px #000; line-height: 100% } 
+.block-vertical .well .quote-text { color: #000; float:left }
+.block-vertical .col-md-2 p.summary { text-align: center; margin: 0 auto 0 auto }
+.block-vertical .col-md-2 p { color:#354b60 }
+.block-vertical .col-md-2 h4 { font-weight:bold; color:#354b60 }
+
+
+.block-vertical a.ghost-button:link, 
+.block-vertical a.ghost-button:visited {
+	display: inline-block; background: transparent; color: #000;
+	border: solid 2px #000; border-radius: 2px;font-weight:bold; text-decoration: none; border-radius: 4px  }
+
+.block-vertical a.ghost-button:hover, 
+.block-vertical a.ghost-button:active { text-decoration: none; background: #000; color: #fff }
+#outro a.ghost-button {text-align:center;margin-left:auto;margin-right:auto }
+
+
+.arrow-box-white { position: relative; background: #fff; border: 4px solid #fff } 
+.arrow-box-white:after, .arrow-box-white:before { top: 100%; left: 50%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer: none } 
+.arrow-box-white:after { border-color: rgba(221, 242, 255, 0); border-top-color: #fff; border-width: 30px; margin-left: -30px } 
+.arrow-box-white:before { border-color: rgba(221, 242, 255, 0); border-top-color: #fff; border-width: 36px; margin-left: -36px }
+
+.arrow-box-grey { position: relative; background: #f5f1ed; border: 4px solid  #f5f1ed;margin-bottom:40px } 
+.arrow-box-grey:after, .arrow_box-grey:before { 
+	top: 100%; left: 50%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; } 
+.arrow-box-grey:after { border-color: rgba(221, 242, 255, 0); border-top-color:  #f5f1ed; border-width: 30px; margin-left: -30px; } 
+.arrow-box-grey:before { border-color: rgba(221, 242, 255, 0); border-top-color: #f5f1ed; border-width: 36px; margin-left: -36px; }
+
+.arrow-box-red { position: relative; background: #b4975a; border: 4px solid #b90303 } 
+.arrow-box-red:after, .arrow-box-red:before { 
+	top: 100%; left: 50%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer: none } 
+.arrow-box-red:after { border-color: rgba(221, 242, 255, 0); border-top-color:#b90303; border-width: 30px; margin-left: -30px } 
+.arrow-box-red:before { border-color: rgba(221, 242, 255, 0); border-top-color: #b90303; border-width: 36px; margin-left: -36px }
+
+
+
+/* phone portrait */
+@media all and (max-width: 320px) {
+	.block-white { padding: 10px 0 0 0 }
+	.block-light-grey { padding: 50px 0 0 0 }
+	.block-vertical .col-md-12 h2 { font-size:24px; line-height: 112%; margin-top:0; margin-bottom: 12px }
+	.block-vertical .col-md-12 h2.no-top-arrow { padding-top:12px }
+	.block-vertical .col-md-2 p.big-no { float:left; font-size:22px; padding: 10px 20px; 
+		margin-top:12px; margin-bottom:32px; margin-right: 20px; text-align:left !important  }
+	.block-vertical .col-md-6 p { font-family: Georgia, Times, serif; line-height:126%; margin:0 0 0 -20px }
+	.block-vertical .well { margin-top: 14px; padding: 12px 8px 12px 8px }
+	.block-vertical .well h4 { font-size: 16px }
+	.block-vertical .well ul.fa-ul { margin-left: -4px }
+	.block-vertical .well ul li { font-size: 12px }
+	.block-vertical .well h4.quotes { font-size:15px; margin: 20px 0 3px 0 }
+	.block-vertical .well .quote-no { font-size: 20px; padding: 2px 8px; margin: 6px 14px 0 0 } 
+	.block-vertical .well .quote-text { margin-top:3px; font-size: 13px; width: 180px; line-height:122% }
+	.block-vertical .col-md-2 i { margin-top: 20px; font-size: 14px; line-height:104% }
+	.block-vertical .col-md-2 p.summary { text-align:left !important;  margin-top: 12px; color:#000;font-weight:bold;font-size:14px }
+	.block-vertical .col-md-2 p.summary-text { text-align:left !important;; font-size:13px; margin-bottom:0 }
+	.block-vertical .section-summary { margin-bottom: 0 }
+	.block-vertical .col-md-2 img.img-responsive { display: none }
+	.block-vertical a.ghost-button { margin-top:30px; font-size: 20px; padding: 10px 30px 10px 30px}
+	.block-vertical .col-md-6 p { font-size: 15px; margin-left: 6px; margin-right: 4px;margin-bottom:12px }
+	.block-vertical p.more-link { display:none }
+	.block-vertical .well ul.fa-ul li { font-size:13px; line-height: 118%; margin-bottom:12px }
+	#intro .row { padding:0; margin:0  } 
+	#intro .row .col-md-2 .center-block { margin:0; padding: 0 }
+	#intro .row .col-md-2, 
+	#marriage .row .col-md-2, 
+	#couple .row .col-md-2, 
+	#prince .row .col-md-2, 
+	#sorrows .row .col-md-2,
+	#conclusion .row .col-md-2 { display:none }
+	#outro .col-md-12 h2 {}
+	#outro .col-md-12 h3 { font-size: 14px; margin-top:0; padding-top: 0 }
+	#outro .col-md-12 a.ghost-button:link, 	#outro .col-md-12 a.ghost-button:visited,
+	#outro .col-md-12 a.ghost-button:hover, #outro .col-md-12 a.ghost-button:active { 
+		font-size: 14px; padding: 8px 20px; margin: 12px 0 40px 0 }
+}
+
+/* phone landscape */
+@media all and (max-width: 480px)  and (min-width: 321px) {
+	.block-white { padding: 10px 0 0 0 }
+	.block-light-grey { padding: 50px 0 0 0 }
+	.block-vertical .col-md-12 h2 { font-size:28px; line-height: 112%; margin-top:0; margin-bottom: 12px }
+	.block-vertical .col-md-12 h2.no-top-arrow { padding-top:12px }
+	.block-vertical .col-md-2 p.big-no { float:left; font-size:22px; padding: 10px 20px; margin-top:16px; margin-bottom:32px; margin-right: 20px; text-align:left !important  }
+	.block-vertical .col-md-6 p { font-family: Georgia, Times, serif; line-height:126%; margin:0 0 0 -20px }
+	.block-vertical .well { margin-top: 14px; padding: 20px 18px 20px 18px }
+	.block-vertical .well h4 { font-size: 16px }
+	.block-vertical .well ul.fa-ul { margin-left: -4px }
+	.block-vertical .well ul li { font-size: 12px }
+	.block-vertical .well .quote-no { font-size: 24px; padding: 2px 8px; margin: 6px 14px 0 0 } 
+	.block-vertical .well .quote-text { margin-top:3px;font-size: 14px; width: 70%; line-height:122% }
+
+	.block-vertical .well h4.quotes { font-size:15px; margin: 20px 0 3px 0 }
+
+	.block-vertical .col-md-2 i { margin-top: 20px; font-size: 14px; line-height:104% }
+	.block-vertical .col-md-2 p.summary { text-align:left  !important;   margin-top: 12px; color:#000;font-weight:bold;font-size:16px }
+	.block-vertical .col-md-2 p.summary-text {text-align:left  !important;  font-size:15px; margin-bottom:0 }
+	.block-vertical .section-summary { margin-bottom: 0 }
+	.block-vertical .col-md-2 img.img-responsive { display: none }
+	.block-vertical a.ghost-button { margin-top:30px; font-size: 20px; padding: 10px 30px 10px 30px}
+	.block-vertical .col-md-6 p { font-size: 16px; margin-left: 6px; margin-right: 4px;margin-bottom:12px }
+	.block-vertical p.more-link { display:none }
+	.block-vertical .well ul.fa-ul li { font-size:14px; line-height: 118%; margin-bottom:12px }
+	#intro .row { padding:0; margin:0  } 
+	#intro .row .col-md-2 .center-block { margin:0; padding: 0 }
+	#intro .row .col-md-2, 
+	#marriage .row .col-md-2, 
+	#couple .row .col-md-2, 
+	#prince .row .col-md-2, 
+	#sorrows .row .col-md-2,
+	#conclusion .row .col-md-2 { display:none }
+	#outro .col-md-12 h2 {}
+	#outro .col-md-12 h3 { font-size: 14px; margin-top:0; padding-top: 0 }
+	#outro .col-md-12 a.ghost-button:link, 	#outro .col-md-12 a.ghost-button:visited,
+	#outro .col-md-12 a.ghost-button:hover, #outro .col-md-12 a.ghost-button:active { 
+		font-size: 14px; padding: 8px 20px; margin: 12px 0 40px 0 }
+
+}
+
+	
+/* tablet portrait */
+@media all and (max-width: 766px) and (min-width: 481px) {
+	.block-white { padding: 10px 0 0 0 }
+	.block-light-grey { padding: 50px 0 0 0 }
+	.block-vertical .col-md-12 h2 { font-size:28px; line-height: 112%; margin-top:0; margin-bottom: 12px }
+	.block-vertical .col-md-12 h2.no-top-arrow { padding-top:12px }
+	.block-vertical .col-md-2 p.big-no { float:left; font-size:22px; padding: 10px 20px; margin-top:16px; margin-bottom:32px; margin-right: 20px; text-align:left !important  }
+	.block-vertical .col-md-6 p { font-family: Georgia, Times, serif; line-height:126%; margin:0 0 0 -20px }
+	.block-vertical .well { margin-top: 14px; padding: 14px 10px 10px 10px }
+	.block-vertical .well h4 { font-size: 16px }
+	.block-vertical .well ul.fa-ul { margin-left: -4px }
+	.block-vertical .well ul li { font-size: 12px }
+	.block-vertical .well .quote-no { font-size: 24px; padding: 2px 8px 4px 8px; margin: 6px 14px 0 0 } 
+	.block-vertical .well .quote-text { font-size: 14px; width: 260px; line-height:122% }
+
+	.block-vertical .well h4.quotes { font-size:15px; margin: 20px 0 3px 0 }
+	.block-vertical .well ul.fa-ul li { font-size:14px; line-height: 118%; margin-bottom:12px }
+
+	.block-vertical .col-md-2 i { margin-top: 20px; font-size: 14px; line-height:104% }
+	.block-vertical .col-md-2 p.summary { text-align:left !important;  margin: 12px 0 0 0 !important; color:#000;font-weight:bold;font-size:16px }
+	.block-vertical .col-md-2 p.summary-text { text-align:left  !important; font-size:15px; margin-bottom:0 }
+	.block-vertical .section-summary { margin-bottom: 0 }
+	.block-vertical .col-md-2 img.img-responsive { display: none }
+	.block-vertical a.ghost-button { margin-top:30px; font-size: 20px; padding: 10px 30px 10px 30px}
+	.block-vertical .col-md-6 p { font-size: 16px; margin-left: 6px; margin-right: 4px;margin-bottom:12px }
+	.block-vertical p.more-link { display:none }
+	.block-vertical .well ul.fa-ul li { font-size:14px; line-height: 118%; margin-bottom:12px }
+	#intro .row { padding:0; margin:0  } 
+	#intro .row .col-md-2 .center-block { margin:0; padding: 0 }
+	#intro .row .col-md-2, 
+	#marriage .row .col-md-2, 
+	#couple .row .col-md-2, 
+	#prince .row .col-md-2, 
+	#sorrows .row .col-md-2,
+	#conclusion .row .col-md-2 { display:none }
+	#outro .col-md-12 h2 {}
+	#outro .col-md-12 h3 { font-size: 14px; margin-top:0; padding-top: 0 }
+	#outro .col-md-12 a.ghost-button:link, 	#outro .col-md-12 a.ghost-button:visited,
+	#outro .col-md-12 a.ghost-button:hover, #outro .col-md-12 a.ghost-button:active { 
+		font-size: 14px; padding: 8px 20px; margin: 12px 0 40px 0 }
+
+}
+
+/* tablet landscape */
+@media all and (max-width: 979px) and (min-width: 767px) {
+	.block-white { padding: 30px 0 20px 0 }
+	.block-red { padding: 30px 0 40px 0 }
+	.block-light-grey { padding: 50px 0 20px 0 }
+	.block-vertical .col-md-12 h2 { font-size:32px; line-height: 112%; margin-top:0; margin-bottom: 22px }
+
+	.block-vertical .col-md-12 p.deckhead b { margin-top:20px; font-size: 18px }
+	.block-vertical .col-md-12 p.deckhead { margin-top:20px; font-size: 16px }
+
+	.block-vertical .row-numbers .col-md-2 { text-align:center !important }
+	.block-vertical .col-md-2 p.big-no { font-size:28px; padding: 10px 20px; margin: 16px auto 20px auto !important; text-align:center !important }
+
+	.block-vertical .col-md-2 img { margin-bottom:12px }
+
+	.block-vertical .col-md-6 p { font-family: Georgia, Times, serif; line-height:126%; margin:0 0 0 -20px }
+	.block-vertical .well { margin-top: 4px; padding: 14px`10px 10px 10px }
+	.block-vertical .well h4 { font-size: 14px }
+	.block-vertical .well ul.fa-ul li { font-size: 13px;line-height:124%; }
+	.block-vertical .well .quote-no { font-size: 20px; padding: 6px 8px; margin: 6px 14px 0 0 } 
+	.block-vertical .well .quote-text { font-size: 13px; width: 120px;line-height:122% }
+	.block-vertical .col-md-2 i { margin-top: 20px; font-size: 14px; line-height:104% }
+	.block-vertical .col-md-2 p.summary { margin-top: 0; color:#000;font-weight:bold;font-size:12px }
+	.block-vertical .col-md-2 p.summary-text { font-size:12px; margin-bottom:0 }
+	.block-vertical .col-md-2 img.img-responsive { margin-bottom: 0 }
+	.block-vertical .section-summary { min-height: 120px }
+	.block-vertical a.ghost-button { margin-top:30px; font-size: 20px; padding: 10px 30px 10px 30px}
+	.block-vertical .col-md-6 p { margin-bottom:12px; font-size: 18px; margin-left: 20px; margin-right: 0  }
+}
+
+@media all and (max-width: 991px) and (min-width: 980px) {
+	.block-white { padding: 30px 0 20px 0 }
+	.block-red { padding: 30px 0 40px 0 }
+	.block-light-grey { padding: 50px 0 20px 0 }
+	.block-vertical .col-md-12 h2 { font-size:38px; line-height: 112%; margin-top:0; margin-bottom: 32px }
+	.block-vertical .col-md-12 p.deckhead b { margin-top:20px; font-size: 18px }
+	.block-vertical .col-md-12 p.deckhead { margin-top:20px; font-size: 16px }
+
+	.block-vertical .row-numbers .col-md-2 { text-align:center !important }
+
+	.block-vertical .col-md-2 p.big-no { font-size:28px; padding: 10px 20px;  margin-bottom:12px;margin-left:0; }
+
+	.block-vertical .col-md-2 img { margin-bottom:12px }
+
+	.block-vertical .col-md-6 p { font-family: Georgia, Times, serif; line-height:126%; margin:0 0 0 -20px }
+	.block-vertical .well { margin-top: 0; padding: 14px 10px 10px 10px }
+	.block-vertical .well h4 { font-size: 14px }
+	.block-vertical .well ul.fa-ul li { font-size: 13px;line-height:124%; }
+	.block-vertical .well .quote-no { font-size: 20px; padding: 6px 8px; margin: 6px 14px 0 0 } 
+	.block-vertical .well .quote-text { font-size: 13px; width: 140px;line-height:122% }
+	.block-vertical .col-md-2 i { margin-top: 20px; font-size: 14px; line-height:104% }
+	.block-vertical .col-md-2 p.summary { margin-top: 0; color:#000;font-weight:bold;font-size:12px }
+	.block-vertical .col-md-2 p.summary-text { font-size:12px; margin-bottom:0 }
+	.block-vertical .col-md-2 img.img-responsive { margin-bottom: 0 }
+	.block-vertical .section-summary { min-height: 120px }
+	.block-vertical a.ghost-button { margin-top:30px; font-size: 20px; padding: 10px 30px 10px 30px}
+	.block-vertical .col-md-6 p { margin-bottom:12px; font-size: 18px; margin-left: 20px; margin-right: 0  }
+
+}
+
+/* desktop */
+@media all and (max-width: 1200px) and (min-width: 992px) {
+	.block-vertical .no-top-desktop { margin-top:0 !important; padding-top: 0 !important }
+	.block-white { padding: 10px 0 20px 0 }
+	.block-red { padding: 30px 0 40px 0 }
+	.block-light-grey { padding: 50px 0 20px 0 }
+
+	.block-vertical .col-md-12 p.deckhead b { margin-top:20px; font-size: 18px }
+	.block-vertical .col-md-12 p.deckhead { margin-top:20px; font-size: 16px }
+
+	.block-vertical .col-md-12 h2 { font-size:36px; line-height: 112%; margin-top:12px; margin-bottom: 32px }
+	.block-vertical .col-md-12 h2.no-top-arrow { padding-top:48px; }
+
+	.block-vertical .row-numbers .col-md-2 { text-align:center !important }
+	.block-vertical .col-md-2 p.big-no { text-align: center !important; font-size:32px; padding: 20px 32px; 
+	margin: 6px auto 22px auto  !important}
+	.block-vertical .col-md-2 img { margin-bottom:12px }
+	.block-vertical .col-md-6 p { font-size: 20px; font-family: Georgia, Times, serif; line-height:126%; margin:0 0 0 -20px }
+	.block-vertical .col-md-6 p { font-family: Georgia, Times, serif; line-height:126%; margin:0 0 0 -20px }
+	.block-vertical .well { margin-top: 0; padding: 14px 10px 10px 10px }
+	.block-vertical .well h4 { font-size: 13px }
+	.block-vertical .well ul.fa-ul li { font-size: 13px;line-height:124%; }
+	.block-vertical .well .quote-no { font-size: 20px; padding: 6px 8px; margin: 6px 14px 0 0 } 
+	.block-vertical .well .quote-text { font-size: 13px; width: 70%;line-height:122% }
+	.block-vertical .col-md-2 i { margin-top: 20px; font-size: 14px }
+	.block-vertical .col-md-2 p.summary { margin-top: 12px; color:#000;font-weight:bold }
+	.block-vertical .col-md-2 p.summary-text { font-size:13px; margin-bottom:0 }
+	.block-vertical .col-md-2 img.img-responsive { margin-bottom: 0; margin-top: 12px }
+	.block-vertical .section-summary { min-height: 120px }
+	.block-vertical a.ghost-button { margin-top:30px; font-size: 20px; padding: 10px 30px 10px 30px}
+	.block-vertical .col-md-6 p { margin-bottom:12px; font-size: 22px; margin-left: 20px; margin-right: 0  }
+
+}
+
+/* Popular desktop */
+@media all and (max-width: 1400px) and (min-width: 1201px) {
+	.block-white { padding: 20px 0 40px 0 }
+	.block-light-grey { padding: 60px 0 40px 0 }
+	.block-vertical .col-md-12 p.deckhead b { margin-top:20px; font-size: 20px }
+	.block-vertical .col-md-12 p.deckhead { margin-top:20px; font-size: 18px }
+	.block-vertical .col-md-12 h2 { font-size:48px; line-height: 112%; margin-top:0; margin-bottom: 32px }
+
+	.block-vertical .row-numbers .col-md-2 { text-align:center !important }
+	.block-vertical .col-md-2 p.big-no { text-align: center !important; font-size:32px; padding: 20px 32px; 
+	margin: 6px auto 22px auto  !important}
+	.block-vertical .col-md-12 h2.no-top-arrow { padding-top:48px; }
+	.block-vertical .col-md-2 img { margin-bottom:12px }
+	.block-vertical .col-md-6 p, .block-vertical .col-md-6 p.indent { font-family: Georgia, Times, serif; line-height:126%; margin:0 0 0 -20px;font-size: 24px }
+	.block-vertical .col-md-6 p.indent { text-indent: 40px }
+	.block-vertical .well { margin-top: 0; padding: 16px 12px 16px 12px }
+	.block-vertical .well h4 { font-size: 16px }
+	.block-vertical .well ul li { font-size: 14px }
+	.block-vertical .well .quote-no { font-size: 42px; padding: 2px 8px 4px 8px; margin: 6px 14px 0 0 } 
+	.block-vertical .well .quote-text { font-size: 14px; width: 60%;line-height:132% }
+	.block-vertical .col-md-2 i { margin-top: 20px; font-size: 14px }
+	.block-vertical .col-md-2 p.summary { margin-top: 12px; color:#000;font-weight:bold }
+	.block-vertical .col-md-2 p.summary-text { font-size:13px; margin-bottom:0 }
+	.block-vertical .col-md-2 img.img-responsive { margin-bottom: 0; margin-top: 12px  }
+	.block-vertical a.ghost-button { margin-top:30px; font-size: 20px; padding: 10px 30px 10px 30px}
+}
+
+/* larger desktop */
+@media all and (min-width: 1401px) {
+	.block-white { padding: 20px 0 40px 0 }
+	.block-light-grey { padding: 60px 0 40px 0 }
+
+	.block-vertical .col-md-12 p.deckhead b { margin-top:22px; font-size: 20px }
+	.block-vertical .col-md-12 p.deckhead { margin-top:20px; font-size: 18px }
+	.block-vertical .col-md-12 h2 { font-size:48px; line-height: 112%; margin-top:0; margin-bottom: 32px }
+	.block-vertical .col-md-12 h2.no-top-arrow { padding-top:48px; }
+	.block-vertical .col-md-2 p.big-no { font-size:32px; padding: 20px 32px; margin-top:12px; margin-bottom: 20px }
+
+	.block-vertical .row-numbers .col-md-2 { text-align:center !important }
+
+	.block-vertical .col-md-2 img { margin-bottom:12px }
+	.block-vertical .col-md-6 p, .block-vertical .col-md-6 p.indent { font-family: Georgia, Times, serif; line-height:126%; margin:0 0 0 -20px;font-size: 24px }
+	.block-vertical .col-md-6 p.indent { text-indent: 40px }
+	.block-vertical .well { margin-top: 14px; padding: 20px 18px 20px 18px }
+
+	.block-vertical .well h4 { font-size: 16px }
+	.block-vertical .well ul li { font-size: 14px }
+	.block-vertical .well .quote-no { font-size: 42px; padding: 2px 8px; margin: 6px 14px 0 0 } 
+	.block-vertical .well .quote-text { font-size: 14px; width: 132px;line-height:132% }
+	.block-vertical .col-md-2 i { margin-top: 20px; font-size: 14px }
+	.block-vertical .col-md-2 p.summary { margin-top: 12px; color:#000;font-weight:bold;font-size:14px; }
+	.block-vertical .col-md-2 p.summary-text { font-size:14px; margin-bottom:0 }
+	.block-vertical .col-md-2 img.img-responsive { margin-bottom: 0; margin-top: 12px  }
+	.block-vertical a.ghost-button { margin-top:30px; font-size: 20px; padding: 10px 30px 10px 30px}
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+	.block-vertical .well { margin-top: 0; padding: 14px 10px 10px 10px }
+	.block-vertical .well .quote-text { width: 70% }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+
+}
+
+
+/* ======================= JUMBOTRON ======================*/
+
+
+
+.jumbotron { 
+	padding:0;
+	background: #950202;
+	text-align:left;margin-bottom:0;
+}
+
+.jumbotron .box-side { text-align:right; vertical-align:bottom }
+.jumbotron .box-side h4 { color:#fff; font-weight:bold; border: solid 2px #fff; display: inline-block;  }
+.jumbotron .box-side p { color:#fff }
+.jumbotron .box-side img { text-align: right !important; margin-right:0; padding-right:0 }
+
+.jumbotron h1 { font-weight:bold; color: #fff; letter-spacing:-1px;line-height: 112%; 
+text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3); }
+
+.jumbotron h2 { color:#fff; display:inline-block; border-top: solid 2px #fff; font-weight:bold; text-transform:uppercase;
+	 margin-top: 0; margin-left:3px; color:#fff; font-weight:bold;line-height: 112%;}
+
+.jumbotron .slider-info-container h2 a { color: #fff; text-decoration: underline }
+.jumbotron .slider-info-container h2 a:hover, .jumbotron .slider-info-container h2 a:active { text-decoration: none}
+
+.jumbotron h3 { border-top: solid 1px #fff }
+.jumbotron h3 a { color:#fff;font-weight:bold; text-decoration: underline }
+
+.jumbotron  ul.fa-ul li { color: #fff }
+.jumbotron  ul.fa-ul li span { border-bottom: solid 3px #2ECC71 }
+
+.jumbotron  ul.fa-ul li i { color: #2ECC71 }
+
+
+.jumbotron a.ghost-button:link, 
+.jumbotron a.ghost-button:visited {
+	display: inline-block; background: transparent; color: #fff;
+	border: solid 2px #fff; border-radius: 2px;font-weight:bold;
+	text-decoration:none;
+}
+
+.jumbotron a.ghost-button:hover, 
+.jumbotron a.ghost-button:active { text-decoration: none; background: #CF000F }
+
+@media all and (max-width: 320px) {
+	.jumbotron { margin-bottom:20px }
+	.jumbotron .box-side { display: none }
+	.jumbotron .col-md-4 .box-h1 { margin-top:30px  }
+	.jumbotron .slider-info-container { text-align:center }
+	.jumbotron .col-xs-6 .box-h1 img.img-responsive { width: 100%; text-align:center;
+		margin-left:auto !important; margin-right:auto !important; display: block;  }
+	.jumbotron .slider-info-container h1 { text-align:left; font-size: 20px; margin:32px 0 20px -10px }
+	.jumbotron .slider-info-container h2 { padding-top:18px; font-size: 12px; text-align:left; margin:0 0 12px -12px; line-height: 132%  }
+	.jumbotron .col-xs-12 ul.fa-ul { margin: 22px 0 26px 24px; text-align:left }
+	.jumbotron .col-xs-12 ul.fa-ul li { font-size: 14px; line-height: 142%; margin: 0 0 10px 0 }
+	.jumbotron .col-xs-12 ul.fa-ul li i 1{ font-size: 18px; margin-top:-2px }
+	.jumbotron  ul.fa-ul li span { border-bottom: solid 2px #2ECC71 }
+	.jumbotron a.ghost-button { font-size: 16px; padding: 4px 10px 4px 10px}
+	.jumbotron { padding-bottom: 30px }
+	.jumbotron .col-xs-4 p { font-size: 12px; color:#fff; line-height:114% }
+	.jumbotron .col-xs-4 i { color:#fff; margin: 0 auto; text-align:center }
+}
+
+@media all and (max-width: 480px) and (min-width: 321px) {
+	.jumbotron { margin-bottom:20px }
+	.jumbotron .box-side { display: none }
+	.jumbotron .col-md-4 .box-h1 { margin-top:30px  }
+	.jumbotron .slider-info-container { text-align:center }
+	.jumbotron .col-xs-6 .box-h1 img.img-responsive { width: 100%; text-align:center;
+		margin-left:auto !important; margin-right:auto !important; display: block;  }
+	.jumbotron .slider-info-container h1 { text-align:left; font-size: 20px; margin:32px 0 20px -10px }
+	.jumbotron .slider-info-container h2 { padding-top:18px; font-size: 12px; text-align:left; margin:0 0 12px -12px; line-height: 132%  }
+	.jumbotron .col-xs-12 ul.fa-ul { margin: 22px 0 26px 24px; text-align:left }
+	.jumbotron .col-xs-12 ul.fa-ul li { font-size: 14px; line-height: 142%; margin: 0 0 10px 0 }
+	.jumbotron .col-xs-12 ul.fa-ul li i 1{ font-size: 18px; margin-top:-2px }
+	.jumbotron  ul.fa-ul li span { border-bottom: solid 2px #2ECC71 }
+	.jumbotron a.ghost-button { font-size: 16px; padding: 4px 10px 4px 10px}
+	.jumbotron { padding-bottom: 30px }
+	.jumbotron .col-xs-4 p { font-size: 12px; color:#fff; line-height:114% }
+	.jumbotron .col-xs-4 i { color:#fff; margin: 0 auto; text-align:center }
+}
+
+
+@media all and (max-width: 767px) and (min-width: 481px) {
+	.jumbotron { margin-bottom:20px }
+	.jumbotron .box-side { display: none }
+	.jumbotron .col-md-4 .box-h1 { margin-top:30px  }
+	.jumbotron .slider-info-container { text-align:center }
+	.jumbotron .col-xs-6 .box-h1 img.img-responsive { width: 80%; text-align:left;
+		margin-left:0 !important; margin-bottom:12px;display: block;  }
+	.jumbotron .slider-info-container h1 { text-align:left; font-size: 36px; margin:32px 0 28px -52px }
+	.jumbotron .slider-info-container h2 { padding-top:18px; font-size: 16px; text-align:left; margin:0 0 12px -52px; line-height: 132%  }
+	.jumbotron .col-xs-12 ul.fa-ul { margin: 12px 0 26px 24px; text-align:left }
+	.jumbotron .col-xs-12 ul.fa-ul li { font-size: 16px; line-height: 142%; margin: 0 0 6px 40px }
+	.jumbotron .col-xs-12 ul.fa-ul li i { font-size: 18px; margin-top:-2px }
+	.jumbotron  ul.fa-ul li span { border-bottom: solid 2px #2ECC71 }
+	.jumbotron a.ghost-button { text-align:center; margin-left:auto; margin-right:auto;margin-top:20px; font-size: 18px; padding: 6px 10px 6px 10px}
+	.jumbotron { padding-bottom: 30px }
+	.jumbotron .col-xs-4 p { font-size: 15px; color:#fff; line-height:114% }
+	.jumbotron .col-xs-4 i { color:#fff; margin: 0 auto; text-align:center }
+}
+
+/* Smaller desktops and laptops ( multiple cols, md) */
+@media all and (max-width: 991px) and (min-width: 768px) {
+	.jumbotron { padding:60px 50px;margin-bottom:30px }
+	.jumbotron .box-side h4 { font-size:20px; padding:6px 6px 6px 6px }
+	.jumbotron .box-side p { font-size:14px; margin-top:20px  }
+
+	.jumbotron .slider-info-container { text-align:center }
+	.jumbotron .col-xs-6 .box-h1 img.img-responsive { width: 80%; text-align:left;
+		margin-left:0 !important; margin-bottom:12px;display: block;  }
+	.jumbotron .slider-info-container h1 { text-align:left; font-size: 32px; margin:0 0 28px -52px }
+	.jumbotron .slider-info-container h2 { padding-top:18px; font-size: 16px; text-align:left !important; margin:0 0 12px -82px; 
+	line-height: 132%  }
+	.jumbotron ul.fa-ul { margin: 12px 0 26px 44px; text-align:left }
+	.jumbotron  ul.fa-ul li { font-size: 14px; line-height: 142%; margin: 0 0 6px -50px }
+	.jumbotron  ul.fa-ul li i { font-size: 18px; margin-top:2px }
+	.jumbotron  ul.fa-ul li span { border-bottom: solid 2px #2ECC71 }
+	.jumbotron a.ghost-button { text-align:left !important; margin:0 0 0 -82px; font-size: 18px; padding: 6px 10px 6px 10px}
+	.jumbotron .col-xs-4 p { font-size: 15px; color:#fff; line-height:114% }
+	.jumbotron .col-xs-4 i { color:#fff; margin: 0 auto; text-align:center }
+}
+
+
+/* Less small desktops and laptops (lg) ----------- */
+@media only screen and (max-width: 1024px) and (min-width : 992px) {
+	.jumbotron { padding:60px 40px;margin-bottom:20px }
+
+	.jumbotron .box-side h4 { font-size:16px; padding:6px 6px 6px 6px }
+	.jumbotron .box-side p { font-size:16px; margin-top:20px  }
+	.jumbotron .slider-info-container h1 { text-align:left; font-size: 32px; margin:0 0 28px 0 }
+	.jumbotron .slider-info-container h2 { padding-top:18px; font-size: 16px; text-align:left; margin:0 0 12px 0; line-height: 132%  }
+
+	.jumbotron .col-xs-6 .box-h1 img.img-responsive { width: 90%;  }
+
+	.jumbotron ul.fa-ul { margin: 12px 0 26px 44px; text-align:left }
+	.jumbotron  ul.fa-ul li { font-size: 18px; line-height: 142%; margin: 0 0 6px 0 }
+	.jumbotron  ul.fa-ul li i { font-size: 18px; margin-top:2px }
+
+	.jumbotron a.ghost-button { text-align:left; margin: 0 0 0 20px; 
+		font-size: 18px; padding: 6px 10px 6px 10px}
+	.jumbotron { padding-bottom: 30px }
+	.jumbotron .col-xs-4 p { font-size: 15px; color:#fff; line-height:114% }
+	.jumbotron .col-xs-4 i { color:#fff; margin: 0 auto; text-align:center }
+
+}
+
+
+@media only screen and (max-width: 1336px) and (min-width : 1025px) {
+	.jumbotron { padding:60px 60px;margin-bottom:20px }
+	.jumbotron .box-side h4 { font-size:20px; padding:6px 6px 6px 6px }
+	.jumbotron .box-side p { font-size:16px; margin-top:20px  }
+
+	.jumbotron .col-xs-6 .box-h1 img.img-responsive { width: 84% }
+
+	.jumbotron .slider-info-container h1 { text-align:left; font-size: 36px; margin:0 0 28px 0 }
+	.jumbotron .slider-info-container h2 { padding-top:18px; font-size: 16px; text-align:left; margin:0 0 20px 0; line-height: 132%  }
+
+	.jumbotron ul.fa-ul { margin: 12px 0 26px 44px; text-align:left }
+	.jumbotron  ul.fa-ul li { font-size: 18px; line-height: 142%; margin: 0 0 8px 0 }
+	.jumbotron  ul.fa-ul li i { font-size: 18px; margin-top:2px }
+
+	.jumbotron a.ghost-button { text-align:left; margin: 20px 0 0 20px; 
+		font-size: 18px; padding: 10px 16px 10px 16px}
+	.jumbotron .col-xs-4 p { font-size: 15px; color:#fff; line-height:114% }
+	.jumbotron .col-xs-4 i { color:#fff; margin: 0 auto; text-align:center }
+
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 1337px) {
+	.jumbotron { padding:60px 40px;margin-bottom:20px }
+	.jumbotron .box-side h4 { font-size:20px; padding:6px 6px 6px 6px }
+	.jumbotron .box-side p { font-size:16px; margin-top:20px  }
+
+	.jumbotron .slider-info-container h1 { text-align:left; font-size: 36px; margin:32px 0 28px 0 }
+	.jumbotron .slider-info-container h2 { padding-top:18px; font-size: 16px; text-align:left; margin:0 0 20px 0; line-height: 132%  }
+
+	.jumbotron ul.fa-ul { margin: 12px 0 26px 44px; text-align:left }
+	.jumbotron  ul.fa-ul li { font-size: 18px; line-height: 142%; margin: 0 0 8px 0 }
+	.jumbotron  ul.fa-ul li i { font-size: 18px; margin-top:2px }
+
+	.jumbotron a.ghost-button { text-align:left; margin: 0 0 0 20px; 
+		font-size: 18px; padding: 6px 10px 6px 10px}
+	.jumbotron { padding-bottom: 30px }
+	.jumbotron .col-xs-4 p { font-size: 15px; color:#fff; line-height:114% }
+	.jumbotron .col-xs-4 i { color:#fff; margin: 0 auto; text-align:center }
+}
+
+@media only screen and (min-width: 1441px) {
+	.jumbotron { padding:60px 40px;margin-bottom:20px }
+	.jumbotron .box-side h4 { font-size:20px; padding:6px 6px 6px 6px }
+	.jumbotron .box-side p { font-size:16px; margin-top:20px  }
+
+	.jumbotron .slider-info-container h1 { text-align:left; font-size: 42px; margin:0 0 28px 0 }
+	.jumbotron .slider-info-container h2 { padding-top:18px; font-size: 16px; text-align:left; margin:0 0 20px 0; line-height: 132%  }
+
+	.jumbotron ul.fa-ul { margin: 12px 0 26px 44px; text-align:left }
+	.jumbotron  ul.fa-ul li { font-size: 18px; line-height: 142%; margin: 0 0 8px 0 }
+	.jumbotron  ul.fa-ul li i { font-size: 18px; margin-top:2px }
+
+	.jumbotron a.ghost-button { text-align:left; margin: 32px 0 0 20px; 
+		font-size: 22px; padding: 6px 10px 6px 10px}
+	.jumbotron { padding-bottom: 30px }
+	.jumbotron .col-xs-4 p { font-size: 15px; color:#fff; line-height:114% }
+	.jumbotron .col-xs-4 i { color:#fff; margin: 0 auto; text-align:center }
+}
+
+
+
+.share-on-twitter {
+    background: none repeat scroll 0 0 #41b7d8;
+}
+.share-on-link {
+    color: white;
+    padding: 5px 10px;
+}
+
+.container-share { text-align: center }
+.container-share h4 { text-align: center; margin-left:auto; margin-right:auto; font-weight:bold;text-transform:uppercase }
+
+.container-share h4 { margin:30px 0 20px 0 }
+
+.container-share a.share-on-link { padding:5px 10px;color:#fff;text-decoration: none; font-family: Arial, sans-serif;color:#fff }
+.container-share a.share-on-link:hover, 
+.container-share a.share-on-link:active { color:#fff;text-decoration: none; }
+
+.container-share a.share-on-twitter { background:#41B7D8;color:#fff;text-decoration: none }
+.container-share a.share-on-twitter:hover, 
+.container-share a.share-on-twitter:active{ background:#279ebf;text-decoration: none;}
+
+.container-share a.share-on-facebook { background:#3B5997;color:#fff;text-decoration: none }
+.container-share a.share-on-facebook:hover, 
+.container-share a.share-on-facebook:active{ background:#2d4372;text-decoration: none; }
+
+.container-share a.share-on-googleplus { background:#D64937;color:#fff;text-decoration: none }
+.container-share a.share-on-googleplus:hover, 
+.container-share a.share-on-googleplus:active { background:#b53525;text-decoration: none; }
+
+
+/*--- Mobile portrait ---*/
+@media all and (max-width: 320px) {
+	.container-share { padding-bottom:24px }
+	.container-share h4 { margin:30px 0 10px }
+	.container-share a.share-on-link { font-size:15px; padding:5px 10px }
+}
+
+/*--- Mobile landscape ---*/
+@media all and (max-width: 480px) and (min-width: 321px) {
+	.container-share { padding-bottom:24px }
+	.container-share h4 { margin:30px 0 10px }
+	.container-share a.share-on-link { font-size:15px; padding:5px 10px }
+}
+
+/*--- Small tablets (sm) --*/
+@media all and (min-width: 481px) and (max-width: 767px) {
+	.container-share { padding-bottom:16px }
+	.container-share h4 { margin:30px 0 20px 0 }
+	.container-share a.share-on-link { font-size:15px; padding:8px 14px }
+}
+
+/* Smaller desktops and laptops ( multiple cols, md) */
+@media all and (min-width: 768px) and (max-width: 991px) {
+	.container-share { padding-bottom:16px }
+	.container-share h4 { font-size:20px; margin:30px 0 20px 0 }
+	.container-share a.share-on-link { font-size:18px; padding:8px 16px }
+}
+
+/* Less small desktops and laptops (lg) ----------- */
+@media only screen and (min-width : 992px) and (max-width: 1024px) {
+	.container-share { padding-bottom:16px }
+	.container-share h4 { font-size:20px; margin:40px 0 20px 20px 0 }
+	.container-share a.share-on-link { font-size:18px; padding:8px 16px }
+}
+
+
+@media only screen and (min-width : 1025px) and (max-width: 1336px) {
+	.container-share { padding-bottom:16px }
+	.container-share h4 { font-size:22px; margin:40px 0 20px 0 }
+	.container-share a.share-on-link { font-size:20px; padding:6px 18px }
+}
+
+@media only screen and (min-width: 1337px) and (max-width: 1440px) {
+	.container-share h4 { font-size:22px;margin:40px 0 20px 0 }
+	.container-share a.share-on-link { font-size:22px; padding:6px 18px }
+}
+
+/* Larger screens ----------- */
+@media only screen and (min-width: 1441px) {
+	.container-share h4 font-size:22px; {margin:40px 0 20px }
+	.container-share a.share-on-link { font-size:22px; padding:6px 20px }
+}
+
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+	.container-share h4 { font-size:20px; margin:40px 0 10px 20px 0 }
+	.container-share a.share-on-link { font-size:18px; padding:8px 16px }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+	.container-share h4 { font-size:20px; margin:40px 0 10px 20px 0 }
+	.container-share a.share-on-link { font-size:18px; padding:8px 16px }
+}
+
+
+
+
+/* ==================  FOOTER ======================== */
+.block-footer-desktop { background: #141b19 }
+.block-footer-desktop h4, .block-footer-desktop p, .block-footer-desktop li, .block-footer-desktop li a { color:#fff }
+.block-footer-desktop ul { margin-left:-40px;list-style-type:none }
+.block-footer-desktop h4 {text-transform:uppercase;font-weight:bold }
+
+.block-footer-desktop h4 a:link, .block-footer-desktop h4 a:visited { color:#fff}
+.block-footer-desktop h4 a:hover, .block-footer-desktop h4 a:active {color:red; text-decoration:none}
+
+.block-footer-desktop li a:link, .block-footer-desktop li a:visited { text-decoration:underline }
+.block-footer-desktop li a:hover, .block-footer-desktop li a:active { text-decoration:none;color:red }
+
+.block-footer-desktop .row-red { background:#950202 }
+
+.block-footer-desktop .col-md-12 p { text-align:center; margin-left:auto; margin-right:auto  }
+
+.block-footer-desktop .row-red .col-md-6 p, 
+.block-footer-desktop .row-red .col-md-3 p { color:#fff }
+.block-footer-desktop .row-red .col-md-6 p span { font-weight:bold } 
+
+
+.block-footer-desktop .col-md-7 p img { float:left;margin-right:20px;margin-bottom:180px }
+
+.block-footer-desktop i { color:#fff }
+
+.block-footer-desktop a:link, .block-footer-desktop a:visited { text-decoration:underline;color:#fff }
+.block-footer-desktop a:hover, .block-footer-desktop a:active { text-decoration:none;color:#fff }
+
+
+/*--- Mobile portrait ---*/
+@media all and (max-width: 320px) {
+	.block-footer-desktop .row-red { padding:20px 10px }
+	.block-footer-desktop .row-red .col-md-2 img { margin-bottom:16px }
+	.block-footer-desktop .row-red .col-md-3 p { font-size:14px;line-height:124% }
+	.block-footer-desktop .row-red .col-md-3 p.terms a { font-size:12px }
+}
+
+/*--- Mobile landscape ---*/
+@media all and (max-width: 480px) and (min-width: 321px) {
+	.block-footer-desktop .row-red { padding:30px 20px }
+	.block-footer-desktop .row-red .col-md-2 img { margin-bottom:16px }
+	.block-footer-desktop .row-red .col-md-3 p { font-size:14px;line-height:124% }
+	.block-footer-desktop .row-red .col-md-3 p.terms a { font-size:12px }
+}
+
+/*--- Small tablets (sm) --*/
+@media all and (max-width: 767px) and (min-width: 481px) {
+	.block-footer-desktop .row-red { padding:30px 20px }
+	.block-footer-desktop .row-red .col-md-2 img { margin-bottom:16px }
+	.block-footer-desktop .row-red .col-md-3 p { font-size:14px;line-height:124% }
+	.block-footer-desktop .row-red .col-md-3 p.terms a { font-size:13px }
+}
+
+/* Smaller desktops and laptops ( multiple cols, md) */
+@media all and (max-width: 991px) and (min-width: 768px) {
+	.block-footer-desktop { padding: 20px 0 40px 0 }
+	.block-footer-desktop .row-red { padding:30px 20px }
+	.block-footer-desktop .row-red .col-md-6 p { font-size:17px }
+	.block-footer-desktop .row-red .col-md-3 p.terms a { font-size:13px }
+
+}
+
+/* Less small desktops and laptops (lg) ----------- */
+@media only screen and (max-width: 1024px) and (min-width : 992px) {
+	.block-footer-desktop { padding: 30px 0 40px 0 }
+	.block-footer-desktop .row-red { padding:40px 30px }
+	.block-footer-desktop .row-red .col-md-6 p { font-size:18px }
+	.block-footer-desktop li { margin-bottom:12px }
+	.block-footer-desktop .row-red .col-md-3 p.terms a { font-size:14px }
+}
+
+
+@media only screen and (max-width: 1336px) and (min-width : 1025px) {
+	.block-footer-desktop { padding: 30px 0 40px 0 }
+	.block-footer-desktop .row-red { padding:40px 30px }
+	.block-footer-desktop .row-red .col-md-6 p { font-size:20px }
+	.block-footer-desktop li { margin-bottom:12px }
+	.block-footer-desktop .row-red .col-md-3 p.terms a { font-size:14px }
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 1337px) {
+	.block-footer-desktop { padding: 30px 0 40px 0 }
+	.block-footer-desktop .row-red { padding:40px 30px }
+	.block-footer-desktop .row-red .col-md-6 p { font-size:20px }
+	.block-footer-desktop li { margin-bottom:12px }
+	.block-footer-desktop .row-red .col-md-3 p.terms a { font-size:14px }
+}
+
+
+/* Larger screens ----------- */
+@media only screen and (min-width: 1441px) {
+	.block-footer-desktop { padding: 30px 0 40px 0 }
+	.block-footer-desktop .row-red { padding:40px 30px }
+	.block-footer-desktop .row-red .col-md-6 p { font-size:20px }
+	.block-footer-desktop li { margin-bottom:12px }
+	.block-footer-desktop .row-red .col-md-3 p.terms a { font-size:14px }
+}
+
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+
+
+
+
+/* COOKIE LAW AT PAGE TOP  ============================================================================= */    
+#cookie-law-outer { width:100%; background:#ecf0f1; }
+
+#cookie-law-outer .container { 
+	background:#ecf0f1; background: #D9EDE0;
+	margin:0 auto 0 auto; border-radius: 0; padding:0 
+}
+
+#cookie-law-outer .col-md-8 p { 
+margin:0; text-align:left;  font-weight:bold; color:#000; 
+text-align:left; line-height:128%  }
+
+#cookie-law-outer .col-md-3 a.btn { text-transform: uppercase;
+color:#fff;border-width:0;font-weight:bold }
+
+#cookie-law-outer .col-md-3 a.btn:link, 
+#cookie-law-outer .col-md-3 a.btn:visited { background: #0084A9 }
+
+#cookie-law-outer .col-md-3 a.btn:hover, 
+#cookie-law-outer .col-md-3 a.btn:active { background: #005A75 }    
+
+/* phone portrait */
+@media all and (max-width: 320px)  {
+
+#cookie-law-outer .container   { background: #ecf0f1 }  
+#cookie-law, #cookie-law .row { background: #ecf0f1 }
+#cookie-law-outer { margin-top:32px;background: #ecf0f1 !important;width:100%  }
+#cookie-law-outer .col-md-12 p { font-size: 11px;padding: 6px 0 6px 12px;line-height:132%;margin:0 }
+#cookie-law-outer .col-md-12 p img { float: right;margin-right: 12px }
+}
+
+@media all and (max-width: 480px) and (min-width: 321px) {
+#cookie-law-outer .container   { background: #ecf0f1 }  
+#cookie-law, #cookie-law .row { width: 100%; background: #ecf0f1 }
+#cookie-law-outer .span12 p { font-size: 13px;padding: 8px 0 8px 8px;line-height:132%;margin:0 }
+#cookie-law-outer .span12 p img { float: right;margin-right: 12px }
+}    
+
+/* tablet portrait */
+@media all and (max-width: 766px) and (min-width: 481px) {
+#cookie-law-outer .col-md-1 p { padding-top:20px; text-align:right  }
+#cookie-law-outer .col-md-1 p i { font-size:32px }
+#cookie-law-outer .col-md-8 p { font-size: 14px;padding: 20px 0  }
+#cookie-law-outer .col-md-3 a.btn { margin-top: 20px;padding: 10px 20px }
+#cookie-law-outer .col-md-8 p br.desktop-br { display: none }
+#cookie-law-outer .col-md-8 p br.mobile-320-br { display: none }                
+}
+
+/* tablet landscape */
+@media all and (max-width: 979px) and (min-width: 767px) {
+#cookie-law-outer .col-md-1 p { padding-top:20px; text-align:right  }
+#cookie-law-outer .col-md-1 p i { padding-top:20px; font-size:32px }
+#cookie-law-outer .col-md-8 p { font-size: 14px;padding: 20px 0  }
+#cookie-law-outer .col-md-8 a.btn { margin-top: 16px;padding: 2px 10px }
+#cookie-law-outer .col-md-8 p br.desktop-br { display: none }
+#cookie-law-outer .col-md-8 p br.mobile-320-br { display: none }        
+}
+
+/* desktop */
+@media all and (max-width: 1200px) and (min-width: 980px) {
+#cookie-law-outer .col-md-1 p { padding-top:20px; text-align:right  }
+#cookie-law-outer .col-md-1 p i { font-size:32px }
+#cookie-law-outer .col-md-8 p { font-size: 14px;padding: 20px 0  }
+#cookie-law-outer .col-md-3 a.btn { margin-top: 20px;padding: 10px 10px }
+#cookie-law-outer .col-md-8 p br.desktop-br { display: block }
+#cookie-law-outer .col-md-8 p br.mobile-320-br { display: none }        
+}
+
+/* large desktop */
+@media all and (min-width: 1201px) {
+#cookie-law-outer .container { padding-top:30px } 
+#cookie-law-outer .col-md-1 p { padding-top:20px; text-align:right  }
+#cookie-law-outer .col-md-1 p i { font-size:32px }
+#cookie-law-outer .col-md-8 p { font-size: 14px;padding: 20px 0  }
+#cookie-law-outer .col-md-3 a.btn { margin-top: 20px;padding: 10px 20px }
+#cookie-law-outer .col-md-8 p br.desktop-br { display: block }
+#cookie-law-outer .col-md-8 p br.mobile-320-br { display: none }        
+}
+
+
+
+/*--- Mobile portrait ---*/
+@media all and (max-width: 320px) {
+
+}
+
+/*--- Mobile landscape ---*/
+@media all and (max-width: 480px) and (min-width: 321px) {
+
+}
+
+/*--- Small tablets (sm) --*/
+@media all and (max-width: 767px) and (min-width: 481px) {
+
+}
+
+/* Smaller desktops and laptops ( multiple cols, md) */
+@media all and (max-width: 991px) and (min-width: 768px) {
+
+}
+
+/* Less small desktops and laptops (lg) ----------- */
+@media only screen and (max-width: 1024px) and (min-width : 992px) {
+
+}
+
+
+@media only screen and (max-width: 1336px) and (min-width : 1025px) {
+
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 1337px) {
+
+}
+
+
+/* Larger screens ----------- */
+@media only screen and (min-width: 1441px) {
+
+}
+
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
